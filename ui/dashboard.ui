@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardWindow</class>
+ <widget class="QMainWindow" name="DashboardWindow">
+  <property name="windowTitle">
+   <string>Dashboard - BeverageOps Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <layout class="QHBoxLayout" name="headerLayout">
+      <item>
+       <widget class="QLabel" name="labelWelcome">
+        <property name="text">
+         <string>Selamat datang, [username]</string>
+        </property>
+        <property name="styleSheet">
+         <string>font-weight: bold; font-size: 14px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelRole">
+        <property name="text">
+         <string>Peran: [role]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text">
+       <string>Dashboard Statistik</string>
+      </property>
+      <property name="styleSheet">
+       <string>font-size: 18px; font-weight: bold;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridStats">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupTotalPenjualan">
+        <property name="title">
+         <string>Total Penjualan</string>
+        </property>
+        <layout class="QVBoxLayout" name="layoutPenjualan">
+         <item>
+          <widget class="QLabel" name="labelTotalPenjualan">
+           <property name="text">
+            <string>Rp 0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font: bold 18px; color: #27ae60;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupTotalProduksi">
+        <property name="title">
+         <string>Total Produksi</string>
+        </property>
+        <layout class="QVBoxLayout" name="layoutProduksi">
+         <item>
+          <widget class="QLabel" name="labelTotalProduksi">
+           <property name="text">
+            <string>0 Cup</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font: bold 18px; color: #2980b9;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBahanTerbanyak">
+        <property name="title">
+         <string>Bahan Terbanyak Dipakai</string>
+        </property>
+        <layout class="QVBoxLayout" name="layoutBahan">
+         <item>
+          <widget class="QLabel" name="labelBahanTerbanyak">
+           <property name="text">
+            <string>-</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font: 14px; color: #c0392b;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QGroupBox" name="groupArmadaTerbaik">
+        <property name="title">
+         <string>Armada Terbaik</string>
+        </property>
+        <layout class="QVBoxLayout" name="layoutArmada">
+         <item>
+          <widget class="QLabel" name="labelArmadaTerbaik">
+           <property name="text">
+            <string>-</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font: 14px; color: #8e44ad;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar">
+   <addaction name="menuProduk"/>
+   <addaction name="menuTransaksi"/>
+   <addaction name="menuStok"/>
+   <addaction name="menuLaporan"/>
+   <addaction name="menuUser"/>
+  </widget>
+
+  <action name="menuProduk">
+   <property name="text">
+    <string>Manajemen Produk</string>
+   </property>
+  </action>
+  <action name="menuTransaksi">
+   <property name="text">
+    <string>Transaksi</string>
+   </property>
+  </action>
+  <action name="menuStok">
+   <property name="text">
+    <string>Stok Bahan</string>
+   </property>
+  </action>
+  <action name="menuLaporan">
+   <property name="text">
+    <string>Laporan</string>
+   </property>
+  </action>
+  <action name="menuUser">
+   <property name="text">
+    <string>User &amp; Akses</string>
+   </property>
+  </action>
+
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

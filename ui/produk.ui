@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormProduk</class>
+ <widget class="QWidget" name="FormProduk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Manajemen Produk</string>
+  </property>
+
+  <!-- Judul -->
+  <widget class="QLabel" name="labelJudul">
+   <property name="geometry">
+    <rect><x>20</x><y>10</y><width>300</width><height>30</height></rect>
+   </property>
+   <property name="text">
+    <string><b>📦 Daftar Produk Minuman</b></string>
+   </property>
+   <property name="styleSheet">
+    <string>font-size: 18pt; font-weight: bold;</string>
+   </property>
+  </widget>
+
+  <!-- Form Tambah/Edit -->
+  <widget class="QGroupBox" name="formProduk">
+   <property name="geometry">
+    <rect><x>20</x><y>50</y><width>350</width><height>150</height></rect>
+   </property>
+   <property name="title">
+    <string>Form Produk</string>
+   </property>
+
+   <widget class="QLabel" name="labelNama">
+    <property name="geometry">
+     <rect><x>10</x><y>30</y><width>100</width><height>20</height></rect>
+    </property>
+    <property name="text">
+     <string>Nama Produk:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputNama">
+    <property name="geometry">
+     <rect><x>120</x><y>30</y><width>200</width><height>25</height></rect>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="labelHarga">
+    <property name="geometry">
+     <rect><x>10</x><y>70</y><width>100</width><height>20</height></rect>
+    </property>
+    <property name="text">
+     <string>Harga Satuan:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inputHarga">
+    <property name="geometry">
+     <rect><x>120</x><y>70</y><width>200</width><height>25</height></rect>
+    </property>
+   </widget>
+
+   <widget class="QPushButton" name="btnSimpan">
+    <property name="geometry">
+     <rect><x>120</x><y>110</y><width>90</width><height>30</height></rect>
+    </property>
+    <property name="text">
+     <string>Simpan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnReset">
+    <property name="geometry">
+     <rect><x>230</x><y>110</y><width>90</width><height>30</height></rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+  </widget>
+
+  <!-- Tabel Produk -->
+  <widget class="QTableWidget" name="tabelProduk">
+   <property name="geometry">
+    <rect><x>20</x><y>220</y><width>760</width><height>350</height></rect>
+   </property>
+   <column>
+    <property name="text"><string>ID</string></property>
+   </column>
+   <column>
+    <property name="text"><string>Nama Produk</string></property>
+   </column>
+   <column>
+    <property name="text"><string>Harga</string></property>
+   </column>
+   <column>
+    <property name="text"><string>Aksi</string></property>
+   </column>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DistribusiWindow</class>
+ <widget class="QWidget" name="DistribusiWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Distribusi Armada</string>
+  </property>
+
+  <widget class="QLabel" name="labelJudul">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>300</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string><b>Manajemen Distribusi Armada</b></string>
+   </property>
+  </widget>
+
+  <widget class="QTableWidget" name="tableDistribusi">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>700</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tanggal</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Armada</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Jumlah Cup</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+  </widget>
+
+  <widget class="QLineEdit" name="inputTanggal">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>yyyy-mm-dd</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="inputArmada">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>60</y>
+     <width>200</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Nama Armada</string>
+   </property>
+  </widget>
+
+  <widget class="QLineEdit" name="inputJumlah">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>60</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Jumlah Cup</string>
+   </property>
+  </widget>
+
+  <widget class="QComboBox" name="comboStatus">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>60</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Terkirim</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kembali</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Terjual</string>
+    </property>
+   </item>
+  </widget>
+
+  <widget class="QPushButton" name="btnTambah">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tambah Distribusi</string>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="btnHapus">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>120</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hapus Terpilih</string>
+   </property>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

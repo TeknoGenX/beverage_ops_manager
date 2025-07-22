@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1024</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle"><string>BeverageOps Manager</string></property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+
+    <!-- SIDEBAR -->
+    <item>
+     <widget class="QFrame" name="sidebar">
+      <property name="minimumWidth"><number>200</number></property>
+      <property name="styleSheet">
+       <string notr="true">
+        QFrame {
+          background-color: #2C3E50;
+          color: white;
+        }
+        QPushButton {
+          background-color: #34495E;
+          color: white;
+          padding: 10px;
+          text-align: left;
+        }
+        QPushButton:hover {
+          background-color: #1ABC9C;
+        }
+       </string>
+      </property>
+      <layout class="QVBoxLayout" name="sidebarLayout">
+
+       <item><widget class="QPushButton" name="btnDashboard"><property name="text"><string>📊 Dashboard</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnProduk"><property name="text"><string>🧃 Produk</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnPenjualan"><property name="text"><string>🧾 Penjualan</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnDistribusi"><property name="text"><string>🚚 Distribusi</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnLaporan"><property name="text"><string>📄 Laporan</string></property></widget></item>
+       <item><widget class="QPushButton" name="btnLogout"><property name="text"><string>🔒 Logout</string></property></widget></item>
+
+       <item><spacer name="verticalSpacer">
+         <property name="orientation"><enum>Qt::Vertical</enum></property>
+         <property name="sizeHint"><size><width>20</width><height>300</height></size></property>
+       </spacer></item>
+
+      </layout>
+     </widget>
+    </item>
+
+    <!-- KONTEN UTAMA -->
+    <item>
+     <widget class="QStackedWidget" name="stackedMain">
+      <!-- Nanti akan diisi halaman dashboard, produk, dll -->
+      <property name="styleSheet">
+       <string notr="true">background-color: #ECF0F1;</string>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
